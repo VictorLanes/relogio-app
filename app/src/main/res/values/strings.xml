@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Relógio</string>
+    <string name="w_digital">Relógio digital</string>
+    <string name="w_empilhado">Digital empilhado</string>
+    <string name="w_flip">Relógio flip</string>
+    <string name="w_analogico">Relógio analógico</string>
+    <string name="w_data">Data</string>
+    <string name="w_completo">Relógio, data e alarme</string>
+    <string name="w_digital_desc">Horas grandes com 14 fontes diferentes</string>
+    <string name="w_empilhado_desc">Hora sobre os minutos</string>
+    <string name="w_flip_desc">Cartões estilo relógio de mesa antigo</string>
+    <string name="w_analogico_desc">Ponteiros com 6 mostradores</string>
+    <string name="w_data_desc">Dia da semana e data completa</string>
+    <string name="w_completo_desc">Hora, data e o próximo alarme</string>
+</resources>

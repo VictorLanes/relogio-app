@@ -1,0 +1,45 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.victorlanes.relogio'
+    compileSdk 36
+
+    defaultConfig {
+        applicationId 'com.victorlanes.relogio'
+        minSdk 26
+        targetSdk 36
+        def runNumber = System.getenv('GITHUB_RUN_NUMBER') ?: '1'
+        versionCode Integer.parseInt(runNumber)
+        versionName '1.0.' + runNumber
+    }
+
+    // Chave fixa: as novas versões instalam por cima sem perder alarmes e widgets
+    signingConfigs {
+        app {
+            storeFile file('relogio.keystore')
+            storePassword 'relogio123'
+            keyAlias 'relogio'
+            keyPassword 'relogio123'
+        }
+    }
+
+    buildTypes {
+        debug { signingConfig signingConfigs.app }
+        release {
+            signingConfig signingConfigs.app
+            minifyEnabled false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    lint {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="228dp" android:minHeight="100dp"
+    android:minResizeWidth="80dp" android:minResizeHeight="40dp"
+    android:targetCellWidth="4" android:targetCellHeight="2"
+    android:resizeMode="horizontal|vertical"
+    android:updatePeriodMillis="0"
+    android:initialLayout="@layout/wd_completo_quicksand"
+    android:previewLayout="@layout/wd_completo_quicksand"
+    android:description="@string/w_completo_desc"
+    android:configure="com.victorlanes.relogio.WidgetConfigActivity"
+    android:widgetFeatures="reconfigurable|configuration_optional"
+    android:widgetCategory="home_screen|keyguard" />
